@@ -1,42 +1,98 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+header {
+    /* background-color: white;
+    color: black; */
+    padding: 10px;
+    /* display: flex;
+    justify-content: space-between; */
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0
+    ); /* Adjust the alpha value for transparency */
+    z-index: 1000; /* Adjust the z-index as needed */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-left img {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
 }
 
-.card {
-  padding: 2em;
+.nav-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.read-the-docs {
-  color: #888;
+.nav-right li {
+    margin-left: 20px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: black;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+.logo h1 {
+    color: black;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    font-weight: 200;
+    z-index: 5;
+}
+
+.nav-right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-right ul li a {
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-right ul li a:hover {
+    font-size: 25px;
+}
+.btn {
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: 0.3s ease-in-out;
 }
